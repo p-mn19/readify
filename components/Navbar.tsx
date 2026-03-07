@@ -1,6 +1,6 @@
 const Navbar = () => {
     return ( 
-        <div>Navbar</div>
+        <header className="w-full fixed z-50 bg-('--bg-primary')">Navbar</header>
      );
 }
  
