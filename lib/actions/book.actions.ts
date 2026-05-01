@@ -3,7 +3,8 @@
 import {CreateBook, TextSegment} from "@/types";
 import {connectToDatabase} from "@/database/mongoose";
 import {escapeRegex, generateSlug, serializeData} from "@/lib/utils";
-import {Book, BookSegment} from "@/database/models";
+import Book from "@/database/models/book.model";
+import BookSegment from "@/database/models/book-segment.model";
 
 export const checkBookExists = async (title: string) => {
     try {
