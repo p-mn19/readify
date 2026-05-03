@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 import { BookCardProps } from "@/types";
 
-const BookCard = ({ title, author, coverURL, slug }: BookCardProps) => {
+const BookCard = ({ title, author, coverURL, slug}: BookCardProps) => {
   return (
     <Link href={`/books/${slug}`}>
         <article className="book-card" >
